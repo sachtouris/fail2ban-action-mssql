@@ -19,7 +19,7 @@ You should change the ```<change me>``` with your password of user fail2ban.
 After changing the password move the file to /root/ folder.
 
 ```
-sudo wget https://raw.githubusercontent.com/ToulisDev/fail2ban-action-mssql/main/.my.cnf-fail2ban
+sudo wget https://raw.githubusercontent.com/sachtouris/fail2ban-action-mssql/main/.my.cnf-fail2ban
 sudo nano ./.my.cnf-fail2ban
 sudo mv ./.my.cnf-fail2ban /root/.my.cnf-fail2ban
 ```
@@ -27,14 +27,14 @@ sudo mv ./.my.cnf-fail2ban /root/.my.cnf-fail2ban
 Download config file for fail2ban service and move it to "/etc/fail2ban/action.d/" folder.
 
 ```
-wget https://raw.githubusercontent.com/ToulisDev/fail2ban-action-mssql/main/banned_db.conf
+wget https://raw.githubusercontent.com/sachtouris/fail2ban-action-mssql/main/banned_db.conf
 mv ./banned_db.conf /etc/fail2ban/action.d/banned_db.conf
 ```
 ### Step 4:
 Download the "fail2ban_banned_db" bash script, give chmod 0550 permission and move the file to "/usr/local/bin/fail2ban_banned_db".
 
 ```
-sudo wget https://raw.githubusercontent.com/ToulisDev/fail2ban-action-mssql/main/fail2ban_banned_db
+sudo wget https://raw.githubusercontent.com/sachtouris/fail2ban-action-mssql/main/fail2ban_banned_db
 sudo chmod 0550
 sudo mv ./fail2ban_banned_db /usr/local/bin/fail2ban_banned_db
 ```
